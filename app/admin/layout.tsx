@@ -1,3 +1,5 @@
+import Sidebar from "@/components/sidebar/Sidebar";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -5,7 +7,12 @@ export default function RootLayout({
 }>) {
   return (
     <main>
-        <Sideba
+
+      <div>
+        <Sidebar />
+      </div>
+
+      <div></div>
     </main>
   );
 }

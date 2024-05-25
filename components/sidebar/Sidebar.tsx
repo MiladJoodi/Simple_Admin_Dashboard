@@ -1,4 +1,4 @@
-const page = () => {
+const Sidebar = () => {
     return (
         <div>
             Sidebar
@@ -6,4 +6,4 @@ const page = () => {
     );
 }
 
-export default page;
+export default Sidebar;
