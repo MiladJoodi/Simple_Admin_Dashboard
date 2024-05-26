@@ -1,6 +1,11 @@
+import Link from "next/link";
 import { FaList } from "react-icons/fa";
 import { IoHomeOutline, IoPowerSharp } from "react-icons/io5";
-import { MdOutlineIncompleteCircle, MdOutlinePending, MdOutlinePerson } from "react-icons/md";
+import {
+  MdOutlineIncompleteCircle,
+  MdOutlinePending,
+  MdOutlinePerson,
+} from "react-icons/md";
 import { TbUsers } from "react-icons/tb";
 
 const Sidebar = () => {
@@ -11,18 +16,24 @@ const Sidebar = () => {
       </h3>
 
       <ul className="flex flex-col items-center text-[15px] text-left space-y-10 mt-10">
-        <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
-          <IoHomeOutline className="text-2xl mr-2" />
-          Home
-        </li>
-        <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
-          <TbUsers className="text-2xl mr-2" />
-          Users
-        </li>
-        <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
-          <FaList className="text-2xl mr-2" />
-          Products
-        </li>
+        <Link href="/admin">
+          <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
+            <IoHomeOutline className="text-2xl mr-2" />
+            Home
+          </li>
+        </Link>
+        <Link href="/admin/users">
+          <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
+            <TbUsers className="text-2xl mr-2" />
+            Users
+          </li>
+        </Link>
+        <Link href="/admin/products">
+          <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
+            <FaList className="text-2xl mr-2" />
+            Products
+          </li>
+        </Link>
         <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
           <MdOutlineIncompleteCircle className="text-2xl mr-2" />
           Completed

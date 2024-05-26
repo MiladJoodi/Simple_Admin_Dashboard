@@ -110,8 +110,31 @@ const page = () => {
       </div>
       {/* End Chart */}
 
-      <div>
-          
+      <div className="flex items-center">
+        {/* Start Box */}
+          <div className="h-[400px] w-[500px] shadow-xl m-5">
+            <h3 className="pl-10 font-semibold text-xl">Recent Users</h3>
+            <ul className="space-y-10 p-10">
+              <li>Milad Joodi</li>
+              <li>Jane Joodi</li>
+              <li>Lisney Joodi</li>
+              <li>Rechard Joodi</li>
+            </ul>
+          </div>
+        {/* End Box */}
+
+        {/* Start Box */}
+        <div className="h-[400px] w-[500px] shadow-xl m-5">
+            <h3 className="pl-10 font-semibold text-xl">Recent Transactions</h3>
+            <ul className="space-y-10 p-10">
+              <li>Milad Joodi - $450</li>
+              <li>Jane Joodi - $500</li>
+              <li>Lisney Joodi - $600</li>
+              <li>Rechard Joodi - $700</li>
+            </ul>
+          </div>
+        {/* End Box */}
+
       </div>
 
     </main>
