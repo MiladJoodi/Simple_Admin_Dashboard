@@ -82,6 +82,7 @@ const page = () => {
 
       {/* Start Chart */}
       <div className="flex items-center shadow-md m-10">
+        {/* Line Chart */}
         <LineChart
           xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
           series={[
@@ -92,7 +93,7 @@ const page = () => {
           width={500}
           height={300}
         />
-
+          {/* Pie Chart */}
         <PieChart
           series={[
             {
@@ -108,6 +109,11 @@ const page = () => {
         />
       </div>
       {/* End Chart */}
+
+      <div>
+          
+      </div>
+
     </main>
   );
 };
