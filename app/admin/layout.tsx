@@ -6,13 +6,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main>
-
+    <main className="flex">
       <div>
         <Sidebar />
       </div>
 
-      <div></div>
+      <div>
+        {children}
+      </div>
     </main>
   );
 }
