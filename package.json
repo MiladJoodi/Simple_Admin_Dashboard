@@ -12,11 +12,13 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.18",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@mui/x-charts": "^7.5.1",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.2.1"
+    "react-icons": "^5.2.1",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
     "@types/node": "^20",
