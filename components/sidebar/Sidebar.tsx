@@ -1,6 +1,6 @@
 import { FaList } from "react-icons/fa";
 import { IoHomeOutline, IoPowerSharp } from "react-icons/io5";
-import { MdOutlineIncompleteCircle, MdOutlinePerson } from "react-icons/md";
+import { MdOutlineIncompleteCircle, MdOutlinePending, MdOutlinePerson } from "react-icons/md";
 import { TbUsers } from "react-icons/tb";
 
 const Sidebar = () => {
@@ -28,7 +28,7 @@ const Sidebar = () => {
           Completed
         </li>
         <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
-          <IoHomeOutline className="text-2xl mr-2" />
+          <MdOutlinePending className="text-2xl mr-2" />
           Pending
         </li>
         <li className="flex items-center text-left hover:text-slate-200 cursor-pointer font-semibold">
