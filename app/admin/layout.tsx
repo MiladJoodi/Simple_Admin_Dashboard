@@ -7,11 +7,11 @@ export default function RootLayout({
 }>) {
   return (
     <main className="flex">
-      <div>
+      <div className="w-[20%]">
         <Sidebar />
       </div>
 
-      <div>
+      <div className="w-[80%]">
         {children}
       </div>
     </main>
